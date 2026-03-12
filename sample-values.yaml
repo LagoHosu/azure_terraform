@@ -1,0 +1,84 @@
+# base
+resource_name = "" #알파벳만 입력(특수문자 불가)
+
+resource_group_name = ""
+location            = ""
+
+subscription_id = ""
+tenant_id = "" # Azure Active Directory의 테넌트 ID, [az account show --query tenantId --output tsv] 명령어로 조회해 입력
+
+# network
+vnet_address_space = [""]
+
+default_subnet_name  = ""
+default_subnet_space = [""]
+
+
+# acr
+
+# aks
+admin_group_name     = "" # Azure AD 그룹 이름
+max_pods_agent_node  = 
+max_pods_medium_node = 
+aks_zone             = []
+
+aks_dns_service_ip = ""
+aks_service_cidr   = ""
+
+# postgres
+postgres_version              = ""
+postgres_zone                 = ""
+storage_mb                    = 
+sku_name                      = ""
+active_directory_auth_enabled = 
+password_auth_enabled         =                                   # true
+
+# storage account
+account_tier             = ""
+account_replication_type = ""
+
+allow_nested_items_to_be_public       = 
+default_to_oauth_authentication       = 
+is_hns_enabled                        = 
+storage_public_network_access_enabled = 
+storage_is_local_user_enabled         = 
+storage_acls_default_action           = ""
+
+large_file_share_enabled              = 
+
+# cosmos
+offer_type                           = ""
+kind                                 = ""
+cosmos_public_network_access_enabled = 
+
+consistency_level          = ""
+failover_priority          = 0
+geo_location               = ""
+zone_redundant             = 
+automatic_failover_enabled = 
+mongo_server_version       = ""
+
+
+# key vault
+key_vault_public_network_access_enabled = 
+key_vault_sku_name                      = ""
+key_vault_rbac_authorization_enabled    = 
+key_vault_soft_delete_retention_days    = 
+
+# cognitive
+ai_foundry_public_network_access  = ""
+ai_foundry_sku_name               = ""
+ai_foundry_identity_type          = ""
+network_acls_bypass               = ""
+network_acls_default_action       = ""
+local_authentication_disabled     = 
+ai_foundry_allowProjectManagement = 
+associated_projects               = [""]
+ai_foundry_type                   = "Microsoft.CognitiveServices/accounts@2025-04-01-preview"
+
+# service bus
+servicebus_sku     = ""
+local_auth_enabled = 
+
+# communication service
+data_location = ""

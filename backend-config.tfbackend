@@ -1,0 +1,6 @@
+resource_group_name  = "rg-lake-prod-xpilot"
+storage_account_name = "fileslaketf3" #locals의 storage_name 값으로 지정, terraform.tfvars의 resource_name도 확인하자
+container_name       = "tfstate"
+key                  = "prod.terraform.tfstate"
+
+# 추후 환경 구분 필요하면 파일명을 backend-config.prod.tfbackend, backend-config.dev.tfbackend와 같이 설정

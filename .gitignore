@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+*.tfstate
+terraform.tfstate
+*.tfstate.*
+*.tfvars
+*.tfstate.lock.info
+*.backup
+.terraform.lock.hcl
+
+# Azure 저장소 파일
+*.json
+*.log
+
+# 기타
+*.swp
+
+# terraform.tfvars는 올림
+!terraform.tfvars
+
+*.exe
